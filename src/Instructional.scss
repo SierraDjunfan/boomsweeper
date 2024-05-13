@@ -1,0 +1,19 @@
+.popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    color: white;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.74);
+    margin: 140px auto;
+    max-width: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    height: auto;
+    padding: 30px 50px;
+    font-size: 20px;
+    min-width: 380px;
+    gap: 30px;
+}

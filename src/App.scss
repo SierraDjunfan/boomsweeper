@@ -1,0 +1,34 @@
+@import './Assets/GlobalStyles/colors';
+@import './Assets/GlobalStyles/globalVariables';
+@import './Assets/GlobalStyles/reset';
+@import './Assets/GlobalStyles/typography';
+
+.top-bar {
+    height: 80px;
+    background-color: #15af9d14;
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+.top-bar button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: $font-main;
+    font-size: $min-font-small;
+    color:white;
+    background-color: black;
+}
+
+.top-bar button:hover {
+
+}
+
+.top-bar h1 {
+    color: white;
+    font-size: $min-font-large;
+    margin-right: 20px;
+}
