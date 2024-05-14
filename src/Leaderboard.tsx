@@ -17,7 +17,7 @@ export const Leaderboard = (props: LeaderboardProps) => {
                     <div>No scores yet</div>}
                 <ol>
                     {justFirstFive.map((entry, i) =>
-                        <li className="leaderboard-item">
+                        <li key={entry.date.toISOString()} className="leaderboard-item">
                             <div className="entryName">
                                 <div>{i + 1}</div>
                                 <div>{formattedDate(entry.date)}</div>
