@@ -124,6 +124,7 @@ export const App = () => {
 
     return (
         <div>
+            <div id="compatibility-notice">Sorry! This site is not (yet) mobile friendly. Please try opening the application on a desktop browser.</div>
             {state.leaderboardShouldShow &&
                 <Leaderboard removeScoresButtonClicked={removeHighScores} scores={state.scores} modalWasClicked={modalWasClicked}></Leaderboard>}
 

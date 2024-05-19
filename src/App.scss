@@ -3,10 +3,29 @@
 @import './Assets/GlobalStyles/reset';
 @import './Assets/GlobalStyles/typography';
 
+#compatibility-notice {
+    display: none;
+}
+
+@media (max-width: 743px) {
+    #compatibility-notice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.814);
+        color: white;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        padding: 0px 40px;
+    }
+}
+
 .top-bar {
     height: 80px;
     background-color: #15af9d14;
-    display:flex;
+    display: flex;
     justify-content: center;
     gap: 10px;
     padding: 20px;
@@ -19,13 +38,11 @@
     border-radius: 8px;
     font-family: $font-main;
     font-size: $min-font-small;
-    color:white;
+    color: white;
     background-color: black;
 }
 
-.top-bar button:hover {
-
-}
+.top-bar button:hover {}
 
 .top-bar h1 {
     color: white;
